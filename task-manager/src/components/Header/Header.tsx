@@ -1,8 +1,10 @@
 import { ReactNode } from "react";
 
+import style from "./Header.module.css";
+
 function Header(): ReactNode {
   return (
-    <header>
+    <header className={style.header}>
       <h1>Task Manager</h1>
     </header>
   );

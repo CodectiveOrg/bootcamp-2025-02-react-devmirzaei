@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Task } from "../types/Task.ts";
+import { Task } from "../../types/Task.ts";
 
 const tasks: Task[] = [
   {

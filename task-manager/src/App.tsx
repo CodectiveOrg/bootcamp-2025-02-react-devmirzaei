@@ -4,7 +4,7 @@ import Header from "./components/Header/Header.tsx";
 import Toolbar from "./components/Toolbar/Toolbar.tsx";
 
 import "./App.css";
-import Result from "./components/Result.tsx";
+import Result from "./components/Result/Result.tsx";
 
 function App(): ReactNode {
   return (
