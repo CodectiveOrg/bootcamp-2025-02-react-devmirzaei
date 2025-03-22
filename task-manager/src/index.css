@@ -1,8 +1,9 @@
 :root {
-  --color-white: #f7f7f7;
-  --color-black: #252525;
+  --color-white: hsl(0, 0%, 97%);
+  --color-black: hsl(0, 0%, 15%);
 
-  --color-primary: #6c63ff;
+  --color-primary: hsl(243, 100%, 69%);
+  --color-primary-fade: hsl(243, 100%, 69%, 40%);
 
   --color-surface: var(--color-white);
   --color-text: var(--color-black);
