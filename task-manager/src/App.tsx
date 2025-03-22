@@ -1,9 +1,21 @@
 import { ReactNode } from "react";
 
+import Header from "./components/Header/Header.tsx";
+import Toolbar from "./components/Toolbar/Toolbar.tsx";
+
 import "./App.css";
+import Result from "./components/Result.tsx";
 
 function App(): ReactNode {
-  return <h1>Task Manager</h1>;
+  return (
+    <>
+      <Header />
+      <main>
+        <Toolbar />
+        <Result />
+      </main>
+    </>
+  );
 }
 
 export default App;
