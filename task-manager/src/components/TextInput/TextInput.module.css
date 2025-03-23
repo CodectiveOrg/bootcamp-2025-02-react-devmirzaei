@@ -24,7 +24,7 @@
     }
 
     &::placeholder {
-      color: var(--color-primary-fade);
+      color: var(--color-primary-outline);
     }
   }
 
@@ -37,6 +37,6 @@
   }
 
   &:focus-within {
-    outline: 2px solid var(--color-primary-fade);
+    outline: 2px solid var(--color-primary-outline);
   }
 }
