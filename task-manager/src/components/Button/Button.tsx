@@ -4,11 +4,13 @@ import clsx from "clsx";
 
 import style from "./Button.module.css";
 
-type Variant = "solid" | "outlined";
-type Size = "medium" | "large";
+type Color = "primary" | "danger";
+type Variant = "solid" | "outlined" | "ghost";
+type Size = "small" | "medium" | "large";
 type Shape = "rectangle" | "square" | "circle";
 
 type Props = ComponentProps<"button"> & {
+  color?: Color;
   variant?: Variant;
   size?: Size;
   shape?: Shape;
@@ -16,6 +18,7 @@ type Props = ComponentProps<"button"> & {
 
 function Button({
   children,
+  color = "primary",
   variant = "solid",
   size = "medium",
   shape = "rectangle",
@@ -26,6 +29,7 @@ function Button({
     <button
       className={clsx(
         style.button,
+        style[color],
         style[variant],
         style[size],
         style[shape],
