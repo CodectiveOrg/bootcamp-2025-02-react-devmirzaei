@@ -58,7 +58,7 @@
 
     &:hover,
     &:focus {
-      background-color: var(--buton-color-fade);
+      background-color: var(--button-color-fade);
     }
   }
 
