@@ -8,6 +8,7 @@ import DateInput from "../DateInput/DateInput.tsx";
 import MingcuteAddLine from "../../icons/MingcuteAddLine.tsx";
 
 import style from "./Create.module.css";
+import Select from "../Select/Select.tsx";
 
 function Create(): ReactNode {
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -36,6 +37,15 @@ function Create(): ReactNode {
           <TextInput placeholder="Enter title of task ..." />
           <TextArea placeholder="Enter description of task ..." />
           <DateInput />
+          <Select
+            name="priority"
+            options={[
+              { value: "low", label: "Low" },
+              { value: "medium", label: "Medium" },
+              { value: "high", label: "High" },
+            ]}
+            variant="outlined"
+          />
           <div className={style.actions}>
             <Button
               type="button"

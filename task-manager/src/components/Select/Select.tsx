@@ -7,13 +7,13 @@ import { SelectOption } from "../../types/select-option.ts";
 import style from "./Select.module.css";
 
 type Props = ComponentProps<"select"> & {
-  options: SelectOption[];
   variant?: "solid" | "outlined";
+  options: SelectOption[];
 };
 
 function Select({
-  options,
   variant = "solid",
+  options,
   ...otherProps
 }: Props): ReactNode {
   return (
