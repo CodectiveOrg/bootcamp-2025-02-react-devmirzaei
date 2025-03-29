@@ -3,6 +3,7 @@ import { ReactNode, useRef } from "react";
 import Button from "../Button/Button.tsx";
 import TextInput from "../TextInput/TextInput.tsx";
 import TextArea from "../TextArea/TextArea.tsx";
+import DateInput from "../DateInput/DateInput.tsx";
 
 import MingcuteAddLine from "../../icons/MingcuteAddLine.tsx";
 
@@ -34,6 +35,7 @@ function Create(): ReactNode {
           <div className={style.title}>Create New Task</div>
           <TextInput placeholder="Enter title of task ..." />
           <TextArea placeholder="Enter description of task ..." />
+          <DateInput />
           <div className={style.actions}>
             <Button
               type="button"
