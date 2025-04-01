@@ -4,11 +4,11 @@ import Button from "../Button/Button.tsx";
 import TextInput from "../TextInput/TextInput.tsx";
 import TextArea from "../TextArea/TextArea.tsx";
 import DateInput from "../DateInput/DateInput.tsx";
+import Select from "../Select/Select.tsx";
 
 import MingcuteAddLine from "../../icons/MingcuteAddLine.tsx";
 
 import style from "./Create.module.css";
-import Select from "../Select/Select.tsx";
 
 function Create(): ReactNode {
   const dialogRef = useRef<HTMLDialogElement>(null);
